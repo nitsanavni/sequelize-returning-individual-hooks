@@ -1,7 +1,7 @@
 import test from "ava";
 import { Sequelize, DataTypes, Model, ModelCtor } from "sequelize";
 
-test("fail", async (t) => {
+test("`model.update` combining `returning` and `individualHooks`", async (t) => {
     const sequelize = new Sequelize({ dialect: "sqlite" });
 
     const Ghost: ModelCtor<Model<{ id?: number; name: string }>> = sequelize.define("Ghost", {
