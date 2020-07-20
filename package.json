@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "postinstall": "npm run build && npm test",
         "build": "tsc --incremental",
         "test": "ava"
     },
