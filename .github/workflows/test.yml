@@ -1,0 +1,20 @@
+name: test
+
+on: push
+
+jobs:
+    test:
+        name: test
+        runs-on: ubuntu-18.04
+        steps:
+            - name: checkout
+              uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
+            - name: setup node
+              uses: actions/setup-node@v1
+              with:
+                  registry-url: "https://npm.pkg.github.com"
+                  node-version: 12
+            - name: install
+              run: npm i
