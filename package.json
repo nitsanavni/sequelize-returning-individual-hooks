@@ -8,5 +8,11 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ava": "^3.10.1",
+    "sequelize": "^6.3.3",
+    "sqlite3": "^5.0.0",
+    "typescript": "^3.9.7"
+  }
 }
