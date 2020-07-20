@@ -1,18 +1,24 @@
 {
-  "name": "sequelize-returning-individual-hooks",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "ava": "^3.10.1",
-    "sequelize": "^6.3.3",
-    "sqlite3": "^5.0.0",
-    "typescript": "^3.9.7"
-  }
+    "name": "sequelize-returning-individual-hooks",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc --incremental",
+        "test": "ava"
+    },
+    "ava": {
+        "files": [
+            "index.js"
+        ]
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "ava": "^3.10.1",
+        "sequelize": "^6.3.3",
+        "sqlite3": "^5.0.0",
+        "typescript": "^3.9.7"
+    }
 }
